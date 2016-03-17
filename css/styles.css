@@ -351,11 +351,11 @@ ul.menu li a {
 .footer-block a {
     color: #fff;
 }
-.footer-block .menu {
-	text-align:center;
+.footer-menu {
+	display:inline-block;
 }
-.footer-block .menu a {
-	font-size:14px;
+.footer-menu li {
+	list-style-type:none;
 }
 
 /* ---------------- /footer --------------------- */
