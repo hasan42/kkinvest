@@ -28,6 +28,21 @@ $(document).ready(function(){
 		dots: true
 	});
 	
+	//partners index
+	$('.partners-block').slick({
+		infinite: true,
+		slidesToShow: 8,
+		slidesToScroll: 1
+	});
+	
+	//actions index
+	$('.actions-block').slick({
+		infinite: true,
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		vertical: true
+	});
+	
 	//gallery
 	$(".fancybox").fancybox();
 	

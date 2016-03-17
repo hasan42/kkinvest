@@ -200,9 +200,9 @@ ul.menu li a {
 .find-wrap {
 	display:block;
 	margin:20px auto;
-	box-shadow: 2px 0 5px rgba(0,0,0,0.75);
-	-webkit-box-shadow: 2px 0 5px rgba(0,0,0,0.75);
-	-moz-box-shadow: 2px 0 5px rgba(0,0,0,0.75);
+	box-shadow: 0 2px 5px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.75);
 	background:#d5d5d5;
 	background: -moz-linear-gradient(top, #f2f2f2 0%, #d5d5d5 100%);
 	background: -webkit-linear-gradient(top, #f2f2f2 0%, #d5d5d5 100%);
@@ -276,6 +276,54 @@ ul.menu li a {
 	padding:5px;
 }
 
+.partners-block {
+	width:880px;
+	margin: 0 auto;
+}
+.partners-element { 
+	position:relative;
+	min-height:80px !important;
+}
+.partners-element a { 
+	display:table-cell;
+	vertical-align:middle;
+	height:100%;
+}
+.partners-element a img { 
+	display:table-cell;
+	vertical-align:middle;
+}
+.partners-element .color {
+	display:none;
+}
+.partners-element .no-color {
+	display:table-cell;
+}
+.partners-element:hover {}
+.partners-element:hover .color {
+	display:table-cell;
+}
+.partners-element:hover .no-color {
+	display:none;
+}
+
+.news-block {
+	
+}
+.news-element {
+	display:block;
+	margin-bottom:10px;
+}
+.news-element .image {
+	display:inline-block;
+	vertical-align:top;
+	margin-right:10px;
+}
+.news-element .info {
+	display:inline-block;
+	vertical-align:top;
+	width:75%;
+}
 
 /* ---------------- /content --------------------- */
 
@@ -287,12 +335,12 @@ ul.menu li a {
 }
 
 .footer-wrap {
-	background:#37383d;
-	background: -moz-linear-gradient(top, #45464c 0%, #37383d 100%);
-	background: -webkit-linear-gradient(top, #45464c 0%, #37383d 100%);
-	background: -o-linear-gradient(top, #45464c 0%, #37383d 100%);
-	background: -ms-linear-gradient(top, #45464c 0%, #37383d 100%);
-	background: linear-gradient(top, #45464c 0%, #37383d 100%);
+	background:#800001;
+	background: -moz-linear-gradient(top, #800001 0%, #660001 100%);
+	background: -webkit-linear-gradient(top, #800001 0%, #660001 100%);
+	background: -o-linear-gradient(top, #800001 0%, #660001 100%);
+	background: -ms-linear-gradient(top, #800001 0%, #660001 100%);
+	background: linear-gradient(top, #800001 0%, #660001 100%);
     min-height: 180px;
     margin: -180px auto 0;
 }
