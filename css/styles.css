@@ -402,6 +402,22 @@ ul.menu li a {
 	resize: none;
 }
 
+table.contacts-table {
+	width:100%;
+}
+table.contacts-table tr {
+	background:#fff;
+}
+table.contacts-table tr:nth-child(odd) {
+	background:#ddd;
+}
+table.contacts-table td {
+	padding:5px 7px;
+}
+table.contacts-table td:nth-child(2n) {
+	text-align:right;
+}
+
 /* ---------------- /content --------------------- */
 
 /* ---------------- footer ---------------------- */
