@@ -46,6 +46,21 @@ $(document).ready(function(){
 	//gallery
 	$(".fancybox").fancybox();
 	
+	//slider image
+	$('.slider-big-image').slick({
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		asNavFor: '.slider-big-list'
+	});
+	$('.slider-big-list').slick({
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		asNavFor: '.slider-big-image',
+	});
+	
 	
 });
 
