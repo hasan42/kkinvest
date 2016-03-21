@@ -360,7 +360,47 @@ ul.menu li a {
 	bottom:-5px;
 	width:100%;
 }
+.contacts-spec-block {
+	padding:10px;
+	background:#dfdfdf;
+}
 
+.feedback-block {
+	
+}
+.feedback-block label {
+	display:block;
+	font-weight:normal;
+	margin-top:10px;
+}
+.feedback-block input {
+	border:1px solid #a3a3a3;
+	padding:5px;
+	margin-bottom:10px;
+	width:100%;
+}
+.feedback-block input#fdk-blck-sent { 
+	display:block;
+	color:#fff;
+	text-align:center;
+	padding: 4px 7px;
+	background:#ff8201;
+	border:0;
+	border-bottom:2px solid #824201;
+	text-decoration:none;
+	margin-top:10px;
+}
+.feedback-block input#fdk-blck-sent:hover, .feedback-block input#fdk-blck-sent:active {
+	background:#824201;
+}
+.feedback-block textarea {
+	border:1px solid #a3a3a3;
+	padding:5px;
+	margin-bottom:10px;
+	width:100%;
+	height:80px;
+	resize: none;
+}
 
 /* ---------------- /content --------------------- */
 
