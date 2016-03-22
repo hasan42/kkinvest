@@ -513,6 +513,41 @@ table.content-table td:nth-child(2n) {
 	margin-bottom:20px;	
 }
 
+.vac-block {
+	padding:10px;
+}
+.vac-block h2 a {
+	border-bottom: 1px dashed #000;
+	text-decoration:none;
+}
+.vac-info {
+	position:relative;
+	padding-bottom: 50px;
+	display:none;
+}
+.vac-info ul {
+	padding-left:20px;
+}
+.vac-info ul li {
+	padding: 3px 0;
+}
+.vac-info .orange-button {
+	position:absolute;
+	bottom: 10px;
+	left:50%;
+	margin-left: -55px;
+	text-transform:uppercase;
+}
+.vac-block.active h2 a {
+	border-bottom:0;
+}
+.vac-block.active {
+	background:#dfdfdf;
+}
+.vac-block.active .vac-info {
+	display:block;
+}
+
 
 /* ---------------- /content --------------------- */
 
