@@ -1,22 +1,54 @@
 ﻿$(function() {
 	
+	//servicess on index hide-show
+	$('.services-element').mouseenter(function() {
+		$('.services-element .info').show();
+		$('.services-element .contacts').hide();
+		$(this).children('.info').hide();
+		$(this).children('.contacts').fadeIn(200);
+	});
+	$('.services-element').mouseleave(function() {
+		$('.services-element .contacts').hide();
+		$('.services-element .info').fadeIn(200);
+	});
+	
+	//partners on index hide-show
+	$('.partners-element').mouseenter(function() {
+		$('.partners-element .no-color').show();
+		$('.partners-element .color').hide();
+		$(this).children('a').children('.no-color').hide();
+		$(this).children('a').children('.color').fadeIn(200);
+	});
+	$('.partners-element').mouseleave(function() {
+		$('.partners-element .color').hide();
+		$('.partners-element .no-color').fadeIn(200);
+	});
+	
+	//menu
+	$('ul.menu li').hover(function () {
+		clearTimeout($.data(this,'timer'));
+		$('ul',this).stop(true,true).slideDown(200);
+	}, function () {
+		$.data(this,'timer', setTimeout($.proxy(function() {
+			$('ul',this).stop(true,true).slideUp(200);
+		}, this), 100));
+	});
+	
 
+	//vacancies show
+	$(".vac-block h2 > a").click(function() {
+		if( $(this).parents('.vac-block').hasClass('active') ) {
+			e.preventDefault();
+		}else{
+			$('.vac-block > .vac-info').slideUp(100);
+			$('.vac-block').removeClass('active');
+			$(this).closest('.vac-block').addClass('active');
+			$('.vac-block.active .vac-info').slideDown(200);
+		}
+	});
+	
 });
 
-//find-block hide if miss
-$(document).mouseup(function (e){ // событие клика по веб-документу
-	var div = $(".options-element__select"); // тут указываем ID элемента
-	if (!div.is(e.target) // если клик был не по нашему блоку
-		&& div.has(e.target).length === 0) { // и не по его дочерним элементам
-		div.hide(); // скрываем его
-	}
-});
-
-/*$(document).click( function(event){
-  if( $(event.target).closest(".options-element__select").length ) return;
-	  $(".options-element__select").hide();
-  event.stopPropagation();
-});*/
 
 $(document).ready(function(){
 	

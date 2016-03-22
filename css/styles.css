@@ -31,6 +31,7 @@ a {
 	color:#000;
 	text-decoration:underline;
 }
+a:focus {border:0; outline:0; color:inherit;}
 p.news-date {
 	font-size:12px;
 }
@@ -98,6 +99,38 @@ a.orange-button:hover, a.orange-button:active {
 	font-size:18px;
 }
 
+#call-me {
+	position:fixed;
+	top:50%;
+	right:0;
+	background:#ff8201 url('/images/callme.png') no-repeat center;
+	width:50px;
+	height:240px;
+	z-index:5000;
+	margin-top:-120px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.75);
+	cursor:pointer;
+}
+#call-me:hover {
+	background:#824201 url('/images/callme.png') no-repeat center;
+}
+
+#scroll-top {
+	position:fixed;
+	bottom:-50px;
+	right:-50px;
+	border-radius:100%;
+	background:#800001 url('/images/scrolltop.png') no-repeat 20px 23px;
+	height:100px;
+	width:100px;
+	cursor:pointer;
+}
+#scroll-top:hover {
+	background:#410001 url('/images/scrolltop.png') no-repeat 20px 23px;
+}
+
 
 
 
@@ -125,6 +158,28 @@ ul.menu li a {
 	color:#fff;
 	font-size:16px;
 	text-decoration:none;
+}
+
+ul.menu li > ul {
+	display:none;
+	position:absolute;
+	z-index:50000;
+	top:32px;
+	left:0;
+	padding:0;
+	text-align:left;
+}
+ul.menu li > ul li {
+	background:#d7b56d;
+	display:block;
+	white-space: nowrap;
+}
+ul.menu li > ul li a {}
+ul.menu li > ul li:hover {
+	background:#6e5c38;
+}
+ul.menu li > ul li:hover a {
+	color:#fff;
 }
 
 /* ---------------- /header --------------------- */
@@ -211,8 +266,8 @@ ul.menu li a {
 .services-element .contacts a.button:hover {
 	background:#824201;
 }
-.services-element:hover .info {display:none;}
-.services-element:hover .contacts {display:block;}
+/*.services-element:hover .info {display:none;}
+.services-element:hover .contacts {display:block;}*/
 
 
 .find-wrap {
@@ -319,13 +374,13 @@ ul.menu li a {
 .partners-element .no-color {
 	display:table-cell;
 }
-.partners-element:hover {}
+/*.partners-element:hover {}
 .partners-element:hover .color {
 	display:table-cell;
 }
 .partners-element:hover .no-color {
 	display:none;
-}
+}*/
 
 .news-block {
 	
