@@ -217,6 +217,31 @@ ul.menu li > ul li:hover a {
 	font-weight:bold;
 }
 
+.media-wrap-button{
+	margin:0 auto;
+	width:920px;
+	height:0;
+	position:relative;
+}
+
+.media-wrap-button .slick-prev {
+    bottom: -10px;
+    right: 48px;
+    height: 40px;
+    width: 40px;
+    left: inherit;
+    top: inherit;
+}
+.media-wrap-button .slick-next {
+    bottom: -10px;
+    right: 0px;
+    height: 40px;
+    width: 40px;
+    left: inherit;
+    top: inherit;
+}
+
+
 .services-block {
 	position:relative;
 }

@@ -57,7 +57,9 @@ $(document).ready(function(){
 		infinite: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		dots: true
+		dots: true,
+		prevArrow: '.media-wrap-button .slick-prev',
+        nextArrow: '.media-wrap-button .slick-next',
 	});
 	
 	//partners index

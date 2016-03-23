@@ -115,9 +115,6 @@
     content: url('/images/ar-l.png');
 }
 
-.media-wrap .slick-next {width:40px; height:40px; left:inherit; top:inherit; bottom:20px; right: 15%;}
-.media-wrap .slick-prev {width:40px; height:40px; left:inherit; top:inherit; bottom:20px; right: 18.3%;}
-
 .actions-block {}
 .actions-block .slick-next {top:inherit; bottom:-50px; left:inherit; right:35px;}
 .actions-block .slick-prev {top:inherit; bottom:-50px; left:inherit; right:0px;}
