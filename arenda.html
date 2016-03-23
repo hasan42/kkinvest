@@ -50,16 +50,23 @@
 			<div class="col-xs-12 col-md-12">
 				<nav>
 					<ul class="menu">
-						<li><a href="/about.html">О компании</a></li>
-						<li><a href="/rent.html">Аренда</a></li>
-						<li><a href="/sale.html">Продажа</a></li>
-						<li><a href="/request.html">Покупка</a></li>
-						<li><a href="/tenders.html">Тендеры</a></li>
-						<li><a href="/investor.html">Инвесторам</a></li>
-						<li><a href="/news.html">События компании</a></li>
-						<li><a href="/gallery.html">Фотогалерея</a></li>
-						<li><a href="/info.html">Контакты</a></li>
-						<li class="orange"><a href="/kl.html">Важно</a></li>
+						<li><a href="#">О компании</a>
+							<ul>
+								<li><a href="#">Информация о компании</a></li>
+								<li><a href="/partners.html">Наши партнеры</a></li>
+								<li><a href="#">Награды</a></li>
+								<li><a href="/vac.html">Вакансии</a></li>
+							</ul>
+						</li>
+						<li><a href="/arenda.html">Аренда</a></li>
+						<li><a href="#">Продажа</a></li>
+						<li><a href="/buy.html">Покупка</a></li>
+						<li><a href="#">Тендеры</a></li>
+						<li><a href="/invest.html">Инвесторам</a></li>
+						<li><a href="/news-list.html">События компании</a></li>
+						<li><a href="/photo.html">Фотогалерея</a></li>
+						<li><a href="/contacts.html">Контакты</a></li>
+						<li class="orange"><a href="/actions-list.html">Важно</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -191,6 +198,45 @@
 		
 		
 	</article>
+	
+	
+	<div class="modal fade" id="call-me-modal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+	  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  <div class="modal-body">
+			<div class="row">
+			  <div class="col-md-12">
+				<h1>Заказать звонок</h1>
+				<div class="feedback-block">
+					<div class="row">
+						<div class="col-xs-12 col-md-12">
+							<label for="fdk-blck-organization">ФИО</label>
+							<input type="text" id="fdk-blck-organization">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-md-12">
+							<label for="fdk-blck-organization">Телефон</label>
+							<input type="text" id="fdk-blck-organization">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-md-12">
+							<input type="button" id="fdk-blck-sent" value="Отправить">
+						</div>
+					</div>
+				</div>
+			  </div>	
+			</div>
+		  </div>
+		</div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	
+	<div id="call-me" data-toggle="modal" data-target="#call-me-modal"></div>
+	
+	<div id="scroll-top"></div>
+	
 	<div class="hFooter"></div>
 	</div>
 	
