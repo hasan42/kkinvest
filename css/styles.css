@@ -116,6 +116,10 @@ a.orange-button:hover, a.orange-button:active {
 #call-me:hover {
 	background:#824201 url('/images/callme.png') no-repeat center;
 }
+@media screen and (max-width: 700px) {
+	#call-me { background:#ff8201 url('/images/callme-small.png') no-repeat center; height:50px; margin-top:-25px;}
+	#call-me:hover { background:#ff8201 url('/images/callme-small.png') no-repeat center; }
+}
 
 #scroll-top {
 	position:fixed;
@@ -219,9 +223,10 @@ ul.menu li > ul li:hover a {
 
 .media-wrap-button{
 	margin:0 auto;
-	width:920px;
+	max-width:920px;
 	height:0;
 	position:relative;
+	width:92%;
 }
 
 .media-wrap-button .slick-prev {
@@ -291,6 +296,17 @@ ul.menu li > ul li:hover a {
 .services-element .contacts a.button:hover {
 	background:#824201;
 }
+
+@media screen and (max-width: 725px) {
+	.services-element { width:33%;}
+}
+@media screen and (max-width: 500px) {
+	.services-element { width:50%;}
+}
+@media screen and (max-width: 400px) {
+	.services-element { width:100%; max-width:200px; float:none; display:block; margin:0 auto;}
+}
+
 /*.services-element:hover .info {display:none;}
 .services-element:hover .contacts {display:block;}*/
 
@@ -335,7 +351,7 @@ ul.menu li > ul li:hover a {
 .find-block .find-block-el {
 	display:inline-block;
 	vertical-align:top;
-	margin:0 10px;
+	margin:0 10px 10px;
 	text-align:left;
 }
 .find-block .find-block-el #fnd-blck-type { 
@@ -374,11 +390,16 @@ ul.menu li > ul li:hover a {
 .find-block .find-block-el input {
 	border:1px solid #a3a3a3;
 	padding:5px;
+	
 }
 
 .partners-block {
-	width:880px;
-	margin: 0 auto;
+	max-width:880px;
+	margin: 0 auto 30px !important;
+    width: 88%;
+}
+@media screen and (max-width: 700px) {
+	.partners-block { width: 70%; }
 }
 .partners-element { 
 	position:relative;
@@ -418,6 +439,7 @@ ul.menu li > ul li:hover a {
 	display:inline-block;
 	vertical-align:top;
 	margin-right:10px;
+	width: 22%;
 }
 .news-element .info {
 	display:inline-block;

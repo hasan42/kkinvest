@@ -66,7 +66,39 @@ $(document).ready(function(){
 	$('.partners-block').slick({
 		infinite: true,
 		slidesToShow: 8,
-		slidesToScroll: 1
+		slidesToScroll: 1,
+		responsive: [
+			{
+			  breakpoint: 768,
+			  settings: {
+				slidesToShow: 7
+			  }
+			},
+			{
+			  breakpoint: 668,
+			  settings: {
+				slidesToShow: 6
+			  }
+			},
+			{
+			  breakpoint: 568,
+			  settings: {
+				slidesToShow: 5
+			  }
+			},
+			{
+			  breakpoint: 468,
+			  settings: {
+				slidesToShow: 4
+			  }
+			},,
+			{
+			  breakpoint: 400,
+			  settings: {
+				slidesToShow: 2
+			  }
+			}
+		  ]
 	});
 	
 	//actions index
