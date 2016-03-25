@@ -91,7 +91,7 @@ $(document).ready(function(){
 			  settings: {
 				slidesToShow: 4
 			  }
-			},,
+			},
 			{
 			  breakpoint: 400,
 			  settings: {
@@ -125,6 +125,14 @@ $(document).ready(function(){
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		asNavFor: '.slider-big-image',
+		responsive: [
+			{
+			  breakpoint: 500,
+			  settings: {
+				slidesToShow: 2
+			  }
+			}
+		  ]
 	});
 	
 	
