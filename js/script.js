@@ -47,6 +47,23 @@
 		}
 	});
 	
+	$("#scroll-top").click(function() {
+		$('html, body').animate({scrollTop:0},1000);return false;
+	});
+	$(window).scroll(function(){
+		var nowHeightDoc = $(document).height();
+		var nowHeightWin = $(window).height();
+		var nowScrollTopD = $(document).scrollTop();
+		//console.log( nowHeightDoc );
+		//console.log( nowHeightWin );
+		console.log( nowHeightWin - nowScrollTopD  );
+		if( nowHeightWin - nowScrollTopD > 100 ){
+			$("#scroll-top").fadeOut("slow")
+		}else{
+			$("#scroll-top").fadeIn("slow")
+		}
+	});
+	
 });
 
 

@@ -98,6 +98,11 @@ a.orange-button:hover, a.orange-button:active {
 .header-wrap .find .info span {
 	font-size:18px;
 }
+@media screen and (max-width: 700px) {
+	.header-wrap .find {margin-top:20px;}
+	.header-wrap .find .info { text-align:left;}
+	.header-wrap .find input { float:left; }
+}
 
 #call-me {
 	position:fixed;
@@ -106,7 +111,7 @@ a.orange-button:hover, a.orange-button:active {
 	background:#ff8201 url('/images/callme.png') no-repeat center;
 	width:50px;
 	height:240px;
-	z-index:5000;
+	z-index:1000;
 	margin-top:-120px;
 	box-shadow: 0 2px 5px rgba(0,0,0,0.75);
 	-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.75);
@@ -130,6 +135,7 @@ a.orange-button:hover, a.orange-button:active {
 	height:100px;
 	width:100px;
 	cursor:pointer;
+	display:none;
 }
 #scroll-top:hover {
 	background:#410001 url('/images/scrolltop.png') no-repeat 20px 23px;
@@ -304,7 +310,7 @@ ul.menu li > ul li:hover a {
 	.services-element { width:50%;}
 }
 @media screen and (max-width: 400px) {
-	.services-element { width:100%; max-width:200px; float:none; display:block; margin:0 auto;}
+	/*.services-element { width:100%; max-width:200px; float:none; display:block; margin:0 auto;}*/
 }
 
 /*.services-element:hover .info {display:none;}
@@ -454,6 +460,11 @@ ul.menu li > ul li:hover a {
 
 .actions-block {
 	margin-bottom: 70px !important;
+}
+.actions-element {
+}
+.actions-element img {
+	width:100%;
 }
 
 .object-list-element {
@@ -696,6 +707,9 @@ table.content-table td:nth-child(2n) {
 }
 #kons-modal input[type="button"] {
 	margin-top: 55px;
+}
+@media screen and (max-width: 700px) {
+	#kons-modal input[type="button"] { margin-top: 0px; }
 }
 /* ---------------- /content --------------------- */
 
