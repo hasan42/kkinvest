@@ -34,6 +34,14 @@
 		}, this), 100));
 	});
 	
+	$("#show-menu").click(function() {
+		if( $("ul.menu").is(':hidden')){
+			$("ul.menu").slideDown(200);
+		}else{
+			$("ul.menu").slideUp(200);
+		}
+	});
+	
 
 	//vacancies show
 	$(".vac-block h2 > a").click(function() {

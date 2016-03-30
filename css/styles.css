@@ -53,6 +53,11 @@ a.orange-button {
 a.orange-button:hover, a.orange-button:active {
 	background:#824201;
 }
+button.close {
+	position: relative;
+    top: 5px;
+    z-index: 4000;
+}
 /* ---------------- ------- --------------------- */
 
 
@@ -99,7 +104,7 @@ a.orange-button:hover, a.orange-button:active {
 	font-size:18px;
 }
 @media screen and (max-width: 700px) {
-	.header-wrap .find {margin-top:20px;}
+	.header-wrap .find {margin-top:20px;margin-bottom:20px;}
 	.header-wrap .find .info { text-align:left;}
 	.header-wrap .find input { float:left; }
 }
@@ -173,7 +178,7 @@ ul.menu li a {
 ul.menu li > ul {
 	display:none;
 	position:absolute;
-	z-index:50000;
+	z-index:500;
 	top:32px;
 	left:0;
 	padding:0;
@@ -191,6 +196,52 @@ ul.menu li > ul li:hover {
 ul.menu li > ul li:hover a {
 	color:#fff;
 }
+#show-menu {
+	position:absolute;
+	top:15px;
+	right:15px;
+	z-index:500;
+	display:none;
+	width:24px;
+	height:24px;
+}
+
+/* ---- hamburger ---- */
+
+@media screen and (max-width: 700px) {
+	.menu-block {
+		background:#410001;
+		position:relative;
+		min-height:55px;
+	}
+	#show-menu {
+		display:block;
+	}
+	.menu-block:before {
+		content:'Меню';
+		position:absolute;
+		top:15px;
+		left:15px;
+		z-index:500;
+		color:#d7b56d;
+		font-size:20px;
+	}
+	ul.menu {
+		width:100%;
+		position:relative;
+		padding-top:30px;
+		display:none;
+	}
+	ul.menu li {
+		display:block;
+	}
+	ul.menu li > ul {
+		position:relative;
+		top: 5px;
+	}
+}
+
+/* ---- /hamburger ---- */
 
 /* ---------------- /header --------------------- */
 
@@ -335,6 +386,9 @@ ul.menu li > ul li:hover a {
 .find-wrap  h1 {
 	margin:0;
 }
+@media screen and (max-width: 700px) {
+	.find-wrap  h1 { margin-top:10px;}
+}
 .find-wrap .link {
 	border-bottom:1px dashed #000;
 	font-style: italic;
@@ -348,6 +402,9 @@ ul.menu li > ul li:hover a {
 }
 .find-wrap .print {
 	text-align:center;
+}
+@media screen and (max-width: 700px) {
+	.find-wrap .print { display:none}
 }
 .find-block {
 	margin:20px auto 0;
@@ -739,6 +796,7 @@ table.content-table td:nth-child(2n) {
 }
 .footer-menu {
 	display:inline-block;
+	padding:0 30px 0 0;
 }
 .footer-menu li {
 	list-style-type:none;
